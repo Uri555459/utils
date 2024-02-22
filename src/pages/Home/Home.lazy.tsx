@@ -1,6 +1,6 @@
-import React, { Suspense, lazy } from 'react';
+import React, { Suspense, lazy } from 'react'
 
-const LazyHome = lazy(() => import('./Home'));
+const LazyHome = lazy(() => import('./Home'))
 
 const Home = (
 	props: JSX.IntrinsicAttributes & { children?: React.ReactNode }
@@ -8,6 +8,6 @@ const Home = (
 	<Suspense fallback={null}>
 		<LazyHome {...props} />
 	</Suspense>
-);
+)
 
-export default Home;
+export default Home
